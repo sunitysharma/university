@@ -1,0 +1,370 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 50;
+  font-family: 'Dosis', sans-serif;
+}
+
+header .awesome {
+  background: none;
+  border: none;
+  font-size: 30px;
+  color: white;
+}
+
+li {
+  list-style: none;
+}
+
+select, button, input {
+  display: block;
+}
+
+.submit_button {
+  margin: 0 auto;
+  margin-top: 20px;
+  color: white;
+  background-color: #fcb11d;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+ .container {
+  width: 96%;
+  margin: 0 auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+form {
+  display: block;
+  /* background-color: red; */
+  margin-left: 25%;
+  margin-right: 25%;
+  width: 50%;
+  text-align: center;
+
+}
+
+form select, form input {
+  background-color: #328cc1;
+  margin: 0 auto;
+  padding: 10px 5px;
+  width: 100%;
+  margin-top: 20px;
+  border: 2px white solid;
+  color: white;
+}
+
+h2, h3 {
+  font-family: 'Playfair Display', serif;
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+/* Header starts here */
+.top_nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.logo {
+  display: inline;
+  width: 50%;
+}
+
+.logo h1 a img {
+  max-width: 40%;
+}
+
+.menu_button {
+  background-color: #0b3c5d;
+}
+
+.menu_button button i {
+  display: inline;
+}
+
+/* MAIN - banner starts here */
+
+.banner_wrapper {
+  background-image: url("../img/mainbanner.jpg");
+  background-color: red;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+}
+
+.text_outlay_wrapper {
+  background: rgba(11,60,93,0.65);
+  max-width: 70%;
+  margin-top: 300px;
+  text-align: center;
+  padding: 25px;
+}
+
+.text_outlay_wrapper h3 {
+  color: white;
+}
+
+.text_outlay_wrapper h2 {
+  color: #ffb21c;
+}
+
+
+/* Courses Container */
+
+.courses_container {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  color: white;
+}
+
+.top_wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 20px;
+  overflow: hidden;
+}
+
+.course {
+  background-color: #0b3c5d;
+  display: inline;
+  width: 40%;
+  padding: 20px;
+}
+
+.course h3 {
+  color: #ffb21c;
+  text-align: center;
+}
+
+.course p {
+  line-height: 20px;
+  color: white;
+}
+
+.course nav ul li {
+  line-height: 30px;
+}
+
+.course_submission_form {
+  background-color: #0b3c5d;
+  padding-top: 12px;
+  padding-bottom: 30px;
+  width: 96%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.course_submission_form h3 {
+  color: #ffb21c;
+}
+
+
+
+/* Admissions  */
+
+.admission_container {
+  background-color: #0b3c5d;
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.join_us_image {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.join_us_image img {
+  width: 100%;
+}
+
+/* News Events About Us */
+
+.news_and_events {
+  background-color: #fbfbfb;
+}
+
+.news_and_events h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0b3c5d;
+  position: relative;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.news_and_events h3 {
+  padding-bottom: 5px;
+  padding-top: 5px;
+
+}
+
+.news_and_events a {
+  text-decoration: none;
+  color: #348cc1;
+}
+
+.news_and_events a button{
+  display: inline;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #348cc1;
+
+}
+
+/* .news_and_events h2::after {
+  content: ' ';
+  background: #0b3c5d;
+  width: 30%;
+  height: 2px;
+  position: absolute;
+  left: 35%;
+  right: 35%;
+  top: 100%;
+} */
+
+
+
+.news_container {
+  padding-bottom: 30px;
+}
+
+.news_article {
+  padding-bottom: 10px;
+}
+
+.events_container {
+  padding-bottom: 40px;
+}
+
+.event_list {
+  display: flex;
+  padding-bottom: 20px;
+}
+
+.display_icon {
+  background-color: #fcb11d;
+  /* margin: 0 auto; */
+  margin-top: 10px;
+  color: white;
+  border: none;
+  padding: 15px 20px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  align-items: left;
+}
+
+.display_icon p {
+  font-family: 'Playfair Display', serif;
+  font-size: 18px;
+}
+
+.display_icon p span {
+  font-family: 'Dosis', sans-serif;
+  display: block;
+  font-size: 50px;
+  line-height: 35px;
+}
+
+.display_text {
+  margin-left: 20px;
+}
+
+.display_text h3 {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+
+.aboutus_container {
+  max-width: 95%;
+  margin: 0 auto;
+}
+
+.aboutus_container img {
+  width: 100%;
+  object-fit: contain;
+}
+
+/* Research News */
+
+.research h2 {
+  text-align: center;
+  font-size: 32px;
+  color: #0b3c5d;
+  position: relative;
+  padding-bottom: 10px;
+  text-decoration: underline;
+}
+
+.research_box {
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+}
+
+.research_box img{
+  width: 100%;
+  padding: 0;
+}
+
+.research_para {
+  background: #0b3c5d;
+  color: white;
+}
+
+.research_para h4 {
+  font-family: 'Playfair Display', serif;
+  font-size: 20px;
+}
+
+.research_para .container {
+  width: 85%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.label {
+  text-align: center;
+  background: #fcb11d;
+  color: #0b3c5d;
+}
+/* FOOTER */
+
+.footer{
+  
+}
+
+.footer .contactus_wrapper {
+  background: #0b3c5d;
+  width: 100%;
+  text-align: center;
+}
+
+.logo_bottom .logo img {
+  width: 10%;
+}
+
+.footer_wrapper .socialmedia_wrapper {
+
+}
