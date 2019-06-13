@@ -157,7 +157,7 @@ h2, h3 {
   color: white;
 }
 
-.course nav ul li {
+.course ul li {
   line-height: 30px;
 }
 
@@ -348,23 +348,66 @@ h2, h3 {
   text-align: center;
   background: #fcb11d;
   color: #0b3c5d;
+  padding: 5px 0px;
 }
 /* FOOTER */
 
-.footer{
-  
+.footer {
+  background: #0b3c5d;
 }
 
-.footer .contactus_wrapper {
-  background: #0b3c5d;
+.footer .container {
   width: 100%;
+  padding: 10px 0;
+}
+
+.contactus {
+  color: white;
   text-align: center;
 }
 
-.logo_bottom .logo img {
-  width: 10%;
+.contactus h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  color: #fcb11d;
 }
 
-.footer_wrapper .socialmedia_wrapper {
+.contact_container button {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #fcb11d;
+  display: inline;
+  text-align: center;
+}
 
+.contact_container p {
+  display: inline;
+}
+
+.socialmedia {
+  background: #fbfbfb;
+  text-align: center;
+}
+
+.socialmedia small {
+  color: #348cc1;
+
+}
+
+.social_media .media_icon {
+  display: block;
+}
+
+.socialmedia button {
+  display: inline;
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #348cc1;
+}
+
+.logo_bottom .logo img {
+  /* position: absolute; */
+  width: 30%;
 }
