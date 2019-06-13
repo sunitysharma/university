@@ -48,9 +48,9 @@ select, button, input {
 form {
   display: block;
   /* background-color: red; */
-  margin-left: 25%;
-  margin-right: 25%;
-  width: 50%;
+  margin-left: 15%;
+  margin-right: 15%;
+  width: 70%;
   text-align: center;
 
 }
@@ -72,6 +72,7 @@ h2, h3 {
 }
 
 /* Header starts here */
+
 .top_nav {
   display: flex;
   justify-content: space-around;
@@ -84,7 +85,9 @@ h2, h3 {
 }
 
 .logo h1 a img {
-  max-width: 40%;
+  max-width: 65%;
+  vertical-align: middle;
+  margin: 10px;
 }
 
 .menu_button {
@@ -115,18 +118,23 @@ h2, h3 {
 
 .text_outlay_wrapper {
   background: rgba(11,60,93,0.65);
-  max-width: 70%;
+  max-width: 80%;
   margin-top: 300px;
+  margin-bottom: 30px;
   text-align: center;
-  padding: 25px;
+  padding: 20px;
 }
 
 .text_outlay_wrapper h3 {
   color: white;
+  padding-top: 5px;
+  padding-bottom: 10px;
 }
 
 .text_outlay_wrapper h2 {
   color: #ffb21c;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 
@@ -149,8 +157,8 @@ h2, h3 {
 .course {
   background-color: #0b3c5d;
   display: inline;
-  width: 40%;
-  padding: 20px;
+  width: 45%;
+  padding: 15px;
 }
 
 .course h3 {
@@ -165,13 +173,14 @@ h2, h3 {
 
 .course ul li {
   line-height: 30px;
+  padding-left: 20%;
 }
 
 .course_submission_form {
   background-color: #0b3c5d;
   padding-top: 12px;
   padding-bottom: 30px;
-  width: 96%;
+  width: 95%;
   margin: 0 auto;
   text-align: center;
 }
@@ -191,6 +200,11 @@ h2, h3 {
   margin: 0 auto;
   padding-top: 20px;
   padding-bottom: 30px;
+}
+
+.join_us_heading {
+  width: 95%;
+  margin: 0 auto;
 }
 
 .join_us_image {
@@ -264,16 +278,18 @@ h2, h3 {
 
 .event_list {
   display: flex;
-  padding-bottom: 20px;
+  align-items: center;
+  margin-top: 10px;
+  margin-bottom: 20px;
 }
 
 .display_icon {
   background-color: #fcb11d;
-  /* margin: 0 auto; */
   margin-top: 10px;
   color: white;
   border: none;
-  padding: 15px 20px;
+  width: 80px;
+  height: 80px;
   text-align: center;
   font-size: 14px;
   font-weight: bold;
@@ -289,7 +305,6 @@ h2, h3 {
   font-family: 'Dosis', sans-serif;
   display: block;
   font-size: 50px;
-  line-height: 35px;
 }
 
 .display_text {
@@ -297,8 +312,7 @@ h2, h3 {
 }
 
 .display_text h3 {
-  padding-top: 10px;
-  padding-bottom: 15px;
+  padding-bottom: 10px;
 }
 
 
@@ -308,10 +322,16 @@ h2, h3 {
 }
 
 .aboutus_container img {
+  margin-top: 2.5%;
   width: 100%;
-  object-fit: contain;
+  /* object-fit: contain; */
 }
 
+.aboutus_container p {
+  margin-top: 2.5%;
+  line-height: 1.4;
+  margin-bottom: 2.5%;
+}
 /* Research News */
 
 .research h2 {
@@ -319,19 +339,20 @@ h2, h3 {
   font-size: 32px;
   color: #0b3c5d;
   position: relative;
-  padding-bottom: 10px;
+  padding-bottom: 3%;
   text-decoration: underline;
 }
 
 .research_box {
-  width: 60%;
-  margin-left: 20%;
-  margin-right: 20%;
+  width: 70%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
 .research_box img{
   width: 100%;
   padding: 0;
+  display: block;
 }
 
 .research_para {
@@ -355,6 +376,7 @@ h2, h3 {
   background: #fcb11d;
   color: #0b3c5d;
   padding: 5px 0px;
+  font-weight: bold;
 }
 /* FOOTER */
 
@@ -364,18 +386,28 @@ h2, h3 {
 
 .footer .container {
   width: 100%;
-  padding: 10px 0;
+  padding: 0;
 }
 
 .contactus {
   color: white;
   text-align: center;
+  position: relative;
+}
+
+.contactus .container {
+  padding-top: 5%;
+  padding-bottom: 15%;
 }
 
 .contactus h5 {
   margin-top: 20px;
   margin-bottom: 10px;
   color: #fcb11d;
+}
+
+.contact_container li{
+  margin-bottom: 10px;
 }
 
 .contact_container button {
@@ -385,35 +417,65 @@ h2, h3 {
   color: #fcb11d;
   display: inline;
   text-align: center;
+  margin-right: 5px;
 }
 
 .contact_container p {
   display: inline;
 }
 
+.contact_container p span {
+  display: block;
+}
+
+.useful_links li a {
+  color: white;
+}
+
+.useful_links li a:hover {
+  color: #348cc1;
+}
+
+.logo_bottom .logo img {
+  position: absolute;
+  width: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
 .socialmedia {
   background: #fbfbfb;
   text-align: center;
 }
 
-.socialmedia small {
-  color: #348cc1;
-
+.socialmedia .container {
+  padding-top: 15%;
+  padding-bottom: 5%;
 }
 
-.social_media .media_icon {
-  display: block;
+.socialmedia li {
+  padding-bottom: 2%;
+}
+
+.socialmedia small {
+  color: #348cc1;
+}
+
+.socialmedia small button {
+  font-size: 14px;
+  width: 20px;
+  height: 20px;
 }
 
 .socialmedia button {
   display: inline;
-  background: none;
+  /* background: none; */
   border: none;
-  font-size: 20px;
-  color: #348cc1;
-}
-
-.logo_bottom .logo img {
-  /* position: absolute; */
-  width: 30%;
+  font-size: 16px;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background-color: #348cc1;
 }
