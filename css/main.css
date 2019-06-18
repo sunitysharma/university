@@ -11,6 +11,10 @@ body {
   font-family: 'Dosis', sans-serif;
 }
 
+a:hover {
+  text-decoration: underline;
+}
+
 .pc {
   display: none;
 }
@@ -201,9 +205,6 @@ h2, h3 {
   background-color: #0b3c5d;
   color: white;
   text-align: center;
-  margin: 0 auto;
-  padding-top: 20px;
-  padding-bottom: 30px;
 }
 
 .join_us_heading {
@@ -500,6 +501,14 @@ h2, h3 {
     display: none;
   }
 
+  li a {
+    text-decoration: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+
   .top_pane {
     background: #0b3c5d;
     color: white;
@@ -525,7 +534,11 @@ h2, h3 {
     text-align: right;
   }
 
-  a:link {
+  .top_pane a:link {
+    color: white;
+  }
+
+  .top_pane a:visited {
     color: white;
   }
 
@@ -539,13 +552,11 @@ h2, h3 {
 
   .logo {
     display: inline;
-    width: 33%;
-    /* flex-grow: 1; */
+    width: 25%;
   }
 
   .navigation {
-    width: 66%;
-    /* flex-grow: 5; */
+    width: 70%;
   }
 
   .top_nav .navigation ul {
@@ -554,21 +565,144 @@ h2, h3 {
     align-items: center;
   }
 
-  /* .top_nav .navigation ul li {
+  .top_nav .navigation ul li {
     padding: 1px;
-  } */
+    font-weight: bold;
+    color: #0b3c5d;
+    font-size: 17px;
+  }
 
   .top_nav .navigation ul li a:link {
     color: #0b3c5d;
   }
 
+  .text_outlay_wrapper {
+    background: rgba(11,60,93,0.65);
+    max-width: 35%;
+    margin-top: 280px;
+    margin-bottom: 120px;
+    margin-left: 60%;
+  }
+
+  .course {
+    background-color: rgba(11, 60, 93, 0.9);
+    min-height: 430px;
+  }
+
+  .course h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .course ul {
+    margin-top: 20px;
+  }
+
   .courses_container {
+    background: #fbfbfb;
+    padding: 230px;
+    position: relative;
+  }
+
+  .courses_container .container {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    bottom: 1%;
+    transform: translateX(-50%);
+    /* top: 20%; */
+
+  }
+
+  .top_wrapper {
+    width: 66%;
+  }
+
+  .course_submission_form {
+    width: 33%;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 15px;
+    background-color: rgba(11, 60, 93, 0.9);
+  }
+
+  .course_submission_form h3 {
+    font-size: 25px;
+    font-weight: lighter;
+    padding-top: 0;
+    padding-bottom: 30px;
+  }
+
+  .course_submission_form form {
+    margin-top: 50px;
+  }
+
+  .course_submission_form form select {
+    margin-top: 40px;
+  }
+
+  .course_submission_form form button {
+    margin-top: 40px;
+  }
+
+  .admission_container .container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 85%;
-    margin: 0 auto;
+    flex-flow: column wrap;
+    max-height: 550px;
   }
+
+  .join_us_image {
+    order: 1;
+    width: 50%;
+    height: 100%;
+    padding: 10px;
+  }
+
+  .join_us_heading {
+    order: 2;
+    width: 50%;
+    height: 20%;
+    padding: 10px;
+  }
+
+  .admission_form {
+    order: 3;
+    width: 50%;
+    height: 80%;
+    padding: 10px;
+  }
+
+  .admission_form form {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    max-height: 300px;
+  }
+
+  .admission_form form input {
+    width: 45%;
+    height: 50%;
+    padding: 15px 40px;
+  }
+
+  .admission_form form select {
+    width: 45%;
+    height: 50%;
+    padding: 15px 40px;
+  }
+
+
+
 
   .news_and_events {
     background: #fbfbfb;
@@ -607,17 +741,19 @@ h2, h3 {
     padding: 10px;
     max-width: 33%;
     background: white;
+    /* margin-bottom: 10px; */
   }
 
   .event_list {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    margin-bottom: 10px;
   }
 
   .display_icon {
-    width: 65px;
-    height: 65px;
+    flex: 0 0 5em;
+    height: 5em;
+    width: 5em;
   }
 
   .display_icon p {
@@ -641,10 +777,11 @@ h2, h3 {
   }
 
   .research .container{
+    max-width: 80%;
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    padding-top: 15px;
+    padding-top: 10px;
   }
 
   .research_box {
@@ -652,19 +789,28 @@ h2, h3 {
     margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
+    flex-grow: 1;
   }
 
   .research_para .container {
-    padding: 3% 1%;
-    margin: 0 auto;
     display: block;
+    margin: 0 auto;
+    padding: 0;
+    flex: 0 0 18em;
+    width: 18em;
+    height: 11em;
+    overflow: hidden;
+    padding-top: 10px;
   }
 
-  /* .research_para p {
-    overflow: hidden;
-    max-height: 50px;;
+  .research_para h4 {
+    font-size: 18px;
+    padding-bottom: 10px;
   }
- */
+
+  .research_para p {
+    font-size: 16px;
+  }
 
   .contactus .container {
     padding-top: 4.5%;
@@ -718,14 +864,6 @@ h2, h3 {
     padding-top: 7%;
     padding-bottom: 2%;
   }
-
-
-
-
-
-
-
-
 
 
 
