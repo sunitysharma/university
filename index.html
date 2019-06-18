@@ -7,17 +7,32 @@
   <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
   <link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 <header>
   <div class="header_wrap">
+    <div class="top_pane pc">
+      <div class="container">
+        <address>Address Raleway Avenue</address>
+        <p class="phone"><a href="tel:0801231234">Call us at (080) 123 1234</a></p>
+        <p class="signin"><a href="#">LOGIN/SIGN IN</a></p>
+      </div>
+    </div>
     <div class="top_nav">
       <div class="logo">
         <h1><a href="#"><img src="img/logotext.svg" alt="logo"></a></h1>
       </div>
-      <div class="menu_button">
+      <nav class="navigation pc">
+        <ul>
+          <li class="home_nav"><a href="#">HOME</a></li>
+          <li><a href="#">PROGRAMMES</a></li>
+          <li><a href="#">ADMISSIONS</a></li>
+          <li><a href="#">NEWS & EVENTS</a></li>
+          <li><a href="#">RESEARCH</a></li>
+        </ul>
+      </nav>
+      <div class="menu_button sp">
         <button class="awesome"><i class="fa fa-bars"></i></button>
       </div>
     </div>
@@ -26,11 +41,6 @@
 <main>
   <div class="main_wrapper">
     <div class="banner_wrapper">
-      <!-- <div class="image_wrapper">
-        <figure>
-          <img src="img/mainbanner.jpg" alt="main banner">
-        </figure>
-      </div> -->
       <div class="text_outlay_wrapper">
         <h3>Learn From the Best</h3>
         <h2>"An Investment in Knowledge Always pays the Best Interest."</h2>
@@ -123,12 +133,12 @@
             <h3>UK to tackle nuclear waste with robots and AI</h3>
             <p>The UK’s National Centre for Nuclear Robotics is developing machine vision, artificial intelligence and advanced robots to decommission the country’s 4.9m tonnes of nuclear waste.</p>
           </article>
-          <!-- <article class="news_article">
-            <img src="a.jpg" alt="News Icon 2">
+          <article class="news_article pc">
+            <!-- <img src="a.jpg" alt="News Icon 2"> -->
             <p>8 May 2019</p>
             <h3>Drone delivers transplant organ in world first</h3>
             <p>An unmanned aerial system (UAS) has delivered a kidney to a transplant patient in what is claimed to be the first drone operation of its kind.</p>
-          </article> -->
+          </article>
           <a href="#">
             Read More <button class="awesome"><i class="fa fa-play"></i></button>
           </a>
@@ -145,24 +155,26 @@
               <p>SAT 5:30 PM IST - 8:30 PM IST</p>
             </div>
           </article>
-          <!-- <article class="event_list">
-            <div class="date_display_icon">
-              <p>MAR</p>
-              <p>12</p>
+          <article class="event_list pc">
+            <div class="display_icon">
+              <p>MAR<span>12</span></p>
             </div>
-            <h3>Live Webinar on Data Analytics and it's Future</h3>
-            <p>Conventional Hall</p>
-            <p>TUE 9 AM IST - 5 PM IST</p>
+            <div class="display_text">
+              <h3>Live Webinar on Data Analytics and it's Future</h3>
+              <p>Conventional Hall</p>
+              <p>TUE 9 AM IST - 5 PM IST</p>
+            </div>
           </article>
-          <article class="event_list">
-            <div class="date_display_icon">
-              <p>JAN</p>
-              <p>21</p>
+          <article class="event_list pc">
+            <div class="display_icon">
+              <p>JAN<span>21</span></p>
             </div>
-            <h3>Graduate Fair 2019 - Open House</h3>
-            <p>Auditorium</p>
-            <p>MON 10 AM IST - 5 PM IST</p>
-          </article> -->
+            <div class="display_text">
+              <h3>Graduate Fair 2019 - Open House</h3>
+              <p>Auditorium</p>
+              <p>MON 10 AM IST - 5 PM IST</p>
+            </div>
+          </article>
           <a href="#">
             Calendar <button class="awesome"><i class="fa fa-calendar" aria-hidden="true"></i></button>
           </a>
@@ -180,8 +192,9 @@
       </div>
     </div>
     <article class="research">
+      <h2>Research News</h2>
       <div class="container">
-        <h2>Research News</h2>
+        <!-- Research box 1 -->
         <div class="research_box">
           <figure>
             <img src="img/research1.jpg" alt="Research News 1">
@@ -189,42 +202,44 @@
           <div class="research_para">
             <div class="container">
               <h4>Climate change report urges net zero emissions by 2050</h4>
-              <p>The UK’s Committee on Climate Change (CCC) has called on the government to target net zero greenhouse gas emissions by 2050 with a raft of ambitious new policies.</p>
+              <p>The UK’s Committee on Climate Change (CCC) has called on the government to target net zero greenhouse gas emissions by 2050 with a raft of ambitious new policies with immediate effect.</p>
             </div>
           </div>
           <div class="label">
             <p>Science & Technology</p>
           </div>
         </div>
-        <!-- <div class="research_container">
-        <figure>
-          <img src="img/research2.jpg" alt="Research News 2">
-        </figure>
-        <div class="research_para">
-          <h4>5 Emerging Trends in 21st Century Education</h4>
-          <ul>
-            <li>App Innovation and Gamification</li>
-            <li>Digital Literacy</li>
-            <li>Library Media Specialists</li>
-            <li>Self-Directed Professional Development</li>
-          </ul>
+        <!-- Research box 2 -->
+        <div class="research_box pc">
+          <figure>
+            <img src="img/research2.jpg" alt="Research News 2">
+          </figure>
+          <div class="research_para">
+            <div class="container">
+              <h4>5 Emerging Trends in 21st Century Education</h4>
+              <p>You should be following these trends! One - App Innovation and Gamification. Two -Digital Literacy. Three - Library Media Specialists. Four - Self-Directed Professional Development.
+              </p>
+            </div>
+          </div>
+          <div class="label">
+            <p>Arts & Humanities</p>
+          </div>
         </div>
-        <div class="label">
-          <p>Arts & Humanities</p>
+        <!-- Research box 3 -->
+        <div class="research_box pc">
+          <figure>
+            <img src="img/research3.jpg" alt="Research News 3">
+          </figure>
+          <div class="research_para">
+            <div class="container">
+              <h4>Children tech their parents - Healthy interactions</h4>
+              <p>Public education for youth can influence future generations. A new study suggests that well-designed instructional units can foster family interactions with awareness of climate change.</p>
+            </div>
+          </div>
+          <div class="label">
+            <p>Engineering & Management</p>
+          </div>
         </div>
-      </div>
-      <div class="research_container">
-        <figure>
-          <img src="img/research3.jpg" alt="Research News 3">
-        </figure>
-        <div class="research_para">
-          <h4>Children tech their parents - Healthy interactions</h4>
-          <p>Public education for youth can influence future generations. A new study suggests that well-designed instructional units can</p>
-        </div>
-        <div class="label">
-          <p>Engineering & Management</p>
-        </div>
-      </div> -->
       </div>
     </article>
   </div>
@@ -233,37 +248,39 @@
   <div class="container">
     <div class="contactus">
       <div class="container">
-        <div class="text_container">
-          <h2>Get In Touch</h2>
-          <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
-        </div>
-        <div class="contact_container">
-          <h5>CONTACT US</h5>
-          <ul>
-            <li>
-              <button class="awesome"><i class="fa fa-map-marker"></i></button>
-              <p>Academy University<span>23rd Street 43rd Cross</span><span>Raleway Avenue</span></p>
-            </li>
-            <li>
-              <button class="awesome"><i class="fa fa-mobile"></i></button>
-              <p>Phone: (080) 123 1234</p>
-            </li>
-            <li>
-              <button class="awesome"><i class="fa fa-envelope"></i></button>
-              <p>Email: info@au.com</p>
-            </li>
-          </ul>
-        </div>
-        <div class="useful_links">
-          <h5>USEFUL LINKS</h5>
-          <ul>
-            <li><a href="#">About Us</a></li>
-            <li><a href="#">Admissions</a></li>
-            <li><a href="#">Programmes</a></li>
-            <li><a href="#">Events</a></li>
-            <li><a href="#">Research</a></li>
-            <li><a href="#">FAQs</a></li>
-          </ul>
+        <div class="flex_box">
+          <div class="text_container">
+            <h2>Get In Touch</h2>
+            <p>Want to get in touch? We'd love to hear from you. Here's how you can reach us...</p>
+          </div>
+          <div class="contact_container">
+            <h5>CONTACT US</h5>
+            <ul>
+              <li>
+                <button class="awesome"><i class="fa fa-map-marker"></i></button>
+                <p>Academy University<span>23rd Street 43rd Cross</span><span>Raleway Avenue</span></p>
+              </li>
+              <li>
+                <button class="awesome"><i class="fa fa-mobile"></i></button>
+                <p>Phone: (080) 123 1234</p>
+              </li>
+              <li>
+                <button class="awesome"><i class="fa fa-envelope"></i></button>
+                <p>Email: info@au.com</p>
+              </li>
+            </ul>
+          </div>
+          <div class="useful_links">
+            <h5>USEFUL LINKS</h5>
+            <ul>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Admissions</a></li>
+              <li><a href="#">Programmes</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Research</a></li>
+              <li><a href="#">FAQs</a></li>
+            </ul>
+          </div>
         </div>
         <div class="logo_bottom">
           <figure class="logo">

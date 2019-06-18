@@ -11,6 +11,10 @@ body {
   font-family: 'Dosis', sans-serif;
 }
 
+.pc {
+  display: none;
+}
+
 header .awesome {
   background: none;
   border: none;
@@ -224,6 +228,7 @@ h2, h3 {
 
 .news_and_events h2 {
   text-align: center;
+  font-variant: small-caps;
   font-size: 32px;
   color: #0b3c5d;
   position: relative;
@@ -338,7 +343,6 @@ h2, h3 {
   text-align: center;
   font-size: 32px;
   color: #0b3c5d;
-  position: relative;
   padding-bottom: 3%;
   text-decoration: underline;
 }
@@ -478,4 +482,253 @@ h2, h3 {
   height: 26px;
   border-radius: 50%;
   background-color: #348cc1;
+}
+
+
+
+/*-------------------------------------------------*/
+/* FOR PC */
+/*-------------------------------------------------*/
+
+@media only screen and (min-width: 992px)
+{
+  .pc {
+    display: block;
+  }
+
+  .sp {
+    display: none;
+  }
+
+  .top_pane {
+    background: #0b3c5d;
+    color: white;
+  }
+
+  .top_pane .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 1% 4%;
+  }
+
+  .top_pane address {
+    flex-grow: 1;
+  }
+
+  .top_pane .phone {
+    flex-grow: 1;
+  }
+
+  .top_pane .signin {
+    flex-grow: 8;
+    text-align: right;
+  }
+
+  a:link {
+    color: white;
+  }
+
+  .top_nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 91%;
+    margin: 0 auto;
+  }
+
+  .logo {
+    display: inline;
+    width: 33%;
+    /* flex-grow: 1; */
+  }
+
+  .navigation {
+    width: 66%;
+    /* flex-grow: 5; */
+  }
+
+  .top_nav .navigation ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  /* .top_nav .navigation ul li {
+    padding: 1px;
+  } */
+
+  .top_nav .navigation ul li a:link {
+    color: #0b3c5d;
+  }
+
+  .courses_container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .news_and_events {
+    background: #fbfbfb;
+  }
+
+  .news_and_events .container{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+  }
+
+  .news_container {
+    margin: 10px;
+    padding: 10px;
+    background: white;
+    max-width: 33%;
+  }
+
+  .news_and_events h2 {
+    font-size: 30px;
+    text-align: left;
+  }
+
+  .news_article {
+    margin-bottom: 10px;
+  }
+
+  .news_article h3 {
+    font-size: 15px;
+  }
+
+  .events_container {
+    margin: 10px;
+    padding: 10px;
+    max-width: 33%;
+    background: white;
+  }
+
+  .event_list {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .display_icon {
+    width: 65px;
+    height: 65px;
+  }
+
+  .display_icon p {
+    font-size: 15px;
+  }
+
+  .display_icon p span {
+    font-size: 40px;
+  }
+
+  .display_text h3 {
+    font-size: 15px;
+    padding-bottom: 0px;
+  }
+
+  .aboutus_container {
+    margin: 10px;
+    padding: 10px;
+    max-width: 33%;
+    background: white;
+  }
+
+  .research .container{
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding-top: 15px;
+  }
+
+  .research_box {
+    width: 33%;
+    margin-left: 2%;
+    margin-right: 2%;
+    overflow: hidden;
+  }
+
+  .research_para .container {
+    padding: 3% 1%;
+    margin: 0 auto;
+    display: block;
+  }
+
+  /* .research_para p {
+    overflow: hidden;
+    max-height: 50px;;
+  }
+ */
+
+  .contactus .container {
+    padding-top: 4.5%;
+    padding-bottom: 7.5%;
+  }
+
+  .contactus .flex_box {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .flex_box :nth-child(1) {
+    order: 2;
+    flex-grow: 1;
+  }
+  .flex_box :nth-child(2) {
+    order: 1;
+    flex-grow: 1;
+  }
+  .flex_box :nth-child(3) {
+    order: 3;
+    flex-grow: 1;
+  }
+
+  .text_container h2 {
+    font-size: 50px;
+  }
+
+   h5 {
+    font-size: 15px;
+  }
+
+  .useful_links ul {
+    list-style: none;
+  }
+
+  .useful_links ul li {
+    line-height: 1.4;
+  }
+
+  .useful_links ul li a {
+    text-decoration: none;
+  }
+
+  .logo_bottom .logo img {
+    width: 15%;
+  }
+
+  .socialmedia .container {
+    padding-top: 7%;
+    padding-bottom: 2%;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
 }
