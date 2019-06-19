@@ -282,6 +282,14 @@ h2, h3 {
   padding-bottom: 40px;
 }
 
+.event_list:nth-child(2) {
+ display: none;
+}
+
+.event_list:nth-child(3) {
+ display: none;
+}
+
 .event_list {
   display: flex;
   align-items: center;
@@ -335,7 +343,7 @@ h2, h3 {
 
 .aboutus_container p {
   margin-top: 2.5%;
-  line-height: 1.4;
+  line-height: 1.3;
   margin-bottom: 2.5%;
 }
 /* Research News */
@@ -585,7 +593,8 @@ h2, h3 {
   }
 
   .course {
-    background-color: rgba(11, 60, 93, 0.9);
+    /* background-color: rgba(11, 60, 93, 0.9); */
+    background: #0b3c5d;
     min-height: 430px;
   }
 
@@ -630,7 +639,8 @@ h2, h3 {
     margin-left: 2%;
     margin-right: 2%;
     padding: 15px;
-    background-color: rgba(11, 60, 93, 0.9);
+    /* background-color: rgba(11, 60, 93, 0.9); */
+    background: #0b3c5d;
   }
 
   .course_submission_form h3 {
@@ -706,6 +716,7 @@ h2, h3 {
 
   .news_and_events {
     background: #fbfbfb;
+
   }
 
   .news_and_events .container{
@@ -716,44 +727,82 @@ h2, h3 {
     align-items: stretch;
   }
 
+  .news_and_events a {
+    margin: 1% 0;
+  }
+
   .news_container {
     margin: 10px;
-    padding: 10px;
+    padding: 15px;
     background: white;
-    max-width: 33%;
+    max-width: 30%;
+    position: relative;
+    min-height: 450px;
   }
 
   .news_and_events h2 {
     font-size: 30px;
     text-align: left;
+    margin-bottom: 10px;
+    padding: 10px 0 15px 0;
   }
 
   .news_article {
-    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    padding: 0;
+  }
+
+  .news_article p:nth-child(1){
+    font-size: 14px;
   }
 
   .news_article h3 {
     font-size: 15px;
+    padding: 0 0 5px 0;
+  }
+
+  .news_container a {
+    position: absolute;
+    bottom: 2%;
   }
 
   .events_container {
     margin: 10px;
-    padding: 10px;
-    max-width: 33%;
+    padding: 15px;
+    max-width: 30%;
     background: white;
+    position: relative;
     /* margin-bottom: 10px; */
+  }
+
+  .events_container a {
+    position: absolute;
+    bottom: 2%;
   }
 
   .event_list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    margin-top: 10px;
+    margin-bottom: 15px;
+  }
+
+  .event_list:nth-child(2) {
+   display: flex;
+  }
+
+  .event_list:nth-child(3) {
+   display: flex;
   }
 
   .display_icon {
     flex: 0 0 5em;
     height: 5em;
     width: 5em;
+    padding: 0;
+    margin: 0;
   }
 
   .display_icon p {
@@ -766,14 +815,25 @@ h2, h3 {
 
   .display_text h3 {
     font-size: 15px;
-    padding-bottom: 0px;
+    padding: 0px;
   }
 
   .aboutus_container {
     margin: 10px;
-    padding: 10px;
-    max-width: 33%;
+    padding: 15px;
+    max-width: 30%;
     background: white;
+    position: relative;
+  }
+
+  .aboutus_container a {
+    position: absolute;
+    bottom: 2%;
+  }
+
+  .aboutus_container img {
+    margin-bottom: 10px;
+    margin-top: 0;
   }
 
   .research .container{
@@ -785,7 +845,7 @@ h2, h3 {
   }
 
   .research_box {
-    width: 33%;
+    width: 30%;
     margin-left: 2%;
     margin-right: 2%;
     overflow: hidden;
@@ -864,8 +924,6 @@ h2, h3 {
     padding-top: 7%;
     padding-bottom: 2%;
   }
-
-
 
 
 
