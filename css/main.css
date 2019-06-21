@@ -19,6 +19,15 @@ a:hover, button:hover {
   cursor: pointer;
 }
 
+button {
+  transition-duration: 0.5s;
+}
+
+button:hover {
+  background: white;
+  color: #fcb11d;
+}
+
 header .awesome {
   background: none;
   border: none;
@@ -712,6 +721,10 @@ h2, h3 {
     margin-top: 40px;
   }
 
+  /* .admission_container {
+    min-height: 500px;
+  } */
+
   .admission_container .container {
     max-width: 93.5%;
     display: flex;
@@ -719,27 +732,36 @@ h2, h3 {
     align-items: center;
     flex-flow: column wrap;
     max-height: 550px;
+    overflow: hidden;
   }
 
   .join_us_image {
     order: 1;
-    width: 50%;
-    height: 100%;
+    max-width: 50%;
+    height: auto;
+    /* max-height: 100%; */
     padding: 10px;
+    object-fit: contain;
+
+    /* flex: 1; */
   }
 
   .join_us_heading {
     order: 2;
     width: 50%;
-    height: 20%;
+    height: 30%;
     padding: 10px;
+
+    /* flex: 1; */
   }
 
   .admission_form {
     order: 3;
     width: 50%;
-    height: 80%;
+    height: 70%;
     padding: 10px;
+
+    /* flex: 1; */
   }
 
   .admission_form form {
