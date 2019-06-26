@@ -69,7 +69,6 @@ form {
   margin-right: 15%;
   width: 70%;
   text-align: center;
-
 }
 
 form select, form input {
@@ -80,6 +79,8 @@ form select, form input {
   margin-top: 20px;
   border: 2px white solid;
   color: white;
+  font-family: 'Dosis', sans-serif;
+  font-size: 13px;
 }
 
 form input {
