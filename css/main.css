@@ -130,7 +130,6 @@ h2, h3 {
 
 .banner_wrapper {
   background-image: url("../img/mainbanner.jpg");
-  background-color: red;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
