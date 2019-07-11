@@ -8,6 +8,7 @@
   <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <script src="js/jquery.js"></script>
 </head>
 <body>
 <header>
@@ -33,14 +34,43 @@
         </ul>
       </nav>
       <div class="menu_button sp">
-        <button class="awesome"><i class="fa fa-bars"></i></button>
+        <button class="awesome" id="menuBtn"><i class="fa fa-bars"></i></button>
       </div>
     </div>
+    <nav class="mobile_nav sp" id="mainNav">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Programmes</a></li>
+        <li><a href="#">Admissions</a></li>
+        <li><a href="#">News & Events</a></li>
+        <li><a href="#">Research News</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </nav>
   </div>
 </header>
 <main>
   <div class="main_wrapper">
     <div class="banner_wrapper">
+      <!-- h -->
+      <div class="slider">
+        <ul class="images">
+          <li class="active"><img src="img/slider1.jpg"></li>
+          <li><img src="img/slider2.jpg"></li>
+          <li><img src="img/slider3.jpg"></li>
+          <li><img src="img/slider4.jpg"></li>
+        </ul>
+        <ul class="indicators">
+          <li class="active"></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+        <button id="prevBtn" class="btn prev"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <button id="nextBtn" class="btn next"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+      </div>
+      <!-- // -->
       <div class="text_outlay_wrapper">
         <h3>Learn From the Best</h3>
         <h2>"An Investment in Knowledge Always pays the Best Interest."</h2>
@@ -304,5 +334,7 @@
   </div>
 </div>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>

@@ -100,6 +100,7 @@ h2, h3 {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  position: relative;
 }
 
 .logo {
@@ -110,7 +111,7 @@ h2, h3 {
 .logo h1 a img {
   max-width: 65%;
   vertical-align: middle;
-  margin: 10px;
+  margin: 1%;
 }
 
 .menu_button {
@@ -126,37 +127,164 @@ h2, h3 {
   display: inline;
 }
 
+.mobile_nav {
+  background: rgba(11,60,93,1);
+  font-size: 22px;
+  display: none;
+  position: absolute;
+  width: 100%;
+}
+
+.mobile_nav a {
+  text-decoration: none;
+}
+
+.mobile_nav a:link {
+  color: white;
+  padding: 4%;
+  display: block;
+}
+
+.mobile_nav a:link:hover {
+  border: 1px solid white;
+}
+
+.mobile_nav li {
+  /* padding: 1px 0; */
+  list-style-type: none;
+  text-align: center;
+}
+
+.mobile_nav.active {
+  display: block;
+  z-index: 1;
+  height: 80vh;
+}
+
 /* MAIN - banner starts here */
 
 .banner_wrapper {
-  background-image: url("../img/mainbanner.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  /* background-image: url("../img/mainbanner.jpg"); */
+  /* background-repeat: no-repeat; */
+  /* background-size: cover; */
   width: 100%;
-  background-position: center;
-  display: flex;
-  justify-content: center;
+
+  /* background-position: center; */
+  /* display: flex;
+  justify-content: center; */
+  position: relative;
 }
 
 .text_outlay_wrapper {
   background: rgba(11,60,93,0.65);
-  max-width: 80%;
-  margin-top: 300px;
-  margin-bottom: 30px;
+  width: 50%;
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  width: 85%;
+  transform: translateX(-50%);
+  /* margin-top: 300px;
+  margin-bottom: 30px; */
   text-align: center;
   padding: 20px;
 }
 
 .text_outlay_wrapper h3 {
+  /* position: absolute; */
   color: white;
-  padding-top: 5px;
-  padding-bottom: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .text_outlay_wrapper h2 {
+  /* position: absolute; */
   color: #ffb21c;
-  padding-bottom: 10px;
-  padding-top: 10px;
+  padding-bottom: 1%;
+  padding-top: 1%;
+}
+
+
+
+/* slider */
+
+.slider {
+  /* background-size: cover; */
+  position: relative;
+  /* width: 100%; */
+  /* height: 900px; */
+  object-fit: cover;
+  object-position: center;
+}
+
+.slider ul {
+  margin: 0;
+  padding: 0;
+}
+
+.slider img {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+  height: 80vh;
+}
+.slider .images li {
+  display: none;
+}
+.slider .images li.active {
+  display: block;
+}
+/* // .slider .images li.active + li {
+//   display: block;
+// } */
+.slider .indicators {
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.slider .indicators li {
+  width: 10px;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.slider .indicators li.active {
+  background: white;
+}
+
+.slider button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0;
+  transition: all .3s ease-in;
+  background: transparent;
+  border: none;
+}
+
+.slider button i {
+  font-size: 40px;
+  /* font-weight: lighter; */
+  color: white;
+}
+
+.slider button i:hover {
+  color: #ffb21c;
+}
+
+.slider:hover button {
+  opacity: 1;
+}
+
+.slider .prev {
+  left: 10px;
+}
+
+.slider .next {
+  right: 10px;
 }
 
 
@@ -520,7 +648,6 @@ h2, h3 {
   transform: translateX(-50%);
 }
 
-
 .socialmedia {
   background: #fbfbfb;
   text-align: center;
@@ -573,6 +700,14 @@ h2, h3 {
     display: none;
   }
 
+  .mobile_nav ul {
+    display: none;
+  }
+
+  .mobile_nav.active {
+    display: none;
+  }
+
   li a {
     text-decoration: none;
   }
@@ -590,7 +725,7 @@ h2, h3 {
     display: flex;
     justify-content: space-around;
     align-items: stretch;
-    padding: 1% 4%;
+    padding: 0.5% 4%;
   }
 
   .top_pane address {
@@ -624,11 +759,11 @@ h2, h3 {
 
   .logo {
     display: inline;
-    width: 30%;
+    width: 25%;
   }
 
   .navigation {
-    width: 70%;
+    width: 75%;
   }
 
   .top_nav .navigation ul {
@@ -656,13 +791,34 @@ h2, h3 {
     border-bottom: 4px solid #ffb21c;
   }
 
+  .banner_wrapper {
+    position: relative;
+    overflow: hidden;
+  }
 
   .text_outlay_wrapper {
+    position: absolute;
     background: rgba(11,60,93,0.65);
-    max-width: 35%;
-    margin-top: 280px;
-    margin-bottom: 120px;
-    margin-left: 60%;
+    width: 35%;
+    bottom: 10%;
+    left: 60%;
+    transform: translateX(0);
+    /* top: 45%;
+    right: 5%; */
+
+    /* margin-top: 280px; */
+    /* margin-bottom: 120px; */
+    /* margin-left: 60%; */
+  }
+
+  .slider .indicators {
+    bottom: 10%;
+  }
+
+  .slider img {
+    object-fit: cover;
+    object-position: center;
+    height: 80vh;
   }
 
   .course {
