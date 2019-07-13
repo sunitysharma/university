@@ -141,25 +141,40 @@ h2, h3 {
 
 .mobile_nav a:link {
   color: white;
-  padding: 4%;
-  display: block;
-}
-
-.mobile_nav a:link:hover {
-  border: 1px solid white;
-}
-
-.mobile_nav li {
-  /* padding: 1px 0; */
-  list-style-type: none;
   text-align: center;
+  /* padding: 4%; */
+  display: block;
 }
 
 .mobile_nav.active {
   display: block;
   z-index: 1;
-  height: 80vh;
 }
+
+.mobile_nav.active ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style: none;
+  height: 80vh;
+  flex: 1;
+}
+
+.mobile_nav.active li {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* transitio: background 0.3s ease-in; */
+}
+
+.mobile_nav.active ul li:hover{
+  /* border: 2px solid white; */
+  background: #fcb11d;
+  /* box-shadow: 2px 2px 2px #fcb11d; */
+  /* font-style: italic; */
+}
+
 
 /* MAIN - banner starts here */
 
@@ -177,16 +192,15 @@ h2, h3 {
 
 .text_outlay_wrapper {
   background: rgba(11,60,93,0.65);
-  width: 50%;
   position: absolute;
-  bottom: 10%;
+  bottom: 5%;
   left: 50%;
   width: 85%;
   transform: translateX(-50%);
   /* margin-top: 300px;
   margin-bottom: 30px; */
   text-align: center;
-  padding: 20px;
+  padding: 2% 0;
 }
 
 .text_outlay_wrapper h3 {
@@ -238,7 +252,7 @@ h2, h3 {
 // } */
 .slider .indicators {
   position: absolute;
-  bottom: 5%;
+  bottom: 1%;
   left: 50%;
   transform: translateX(-50%);
 }

@@ -2,7 +2,6 @@ $('#menuBtn').click(function() {
   $('#mainNav').toggleClass('active');
 })
 
-
 //slider jquery
 // $('#prevBtn').click(function() {})
 // $('#nextBtn').click(function() {})
@@ -52,7 +51,7 @@ function updateSlider(id) {
 }
 
 $('#prevBtn, #nextBtn').click(function() {
-  updateSlider(this.id)
+  updateSlider(this.id);
 })
 
 function interval() {
@@ -66,6 +65,7 @@ $('.slider').mouseenter(function() {
   console.log('stop');
   clearInterval(updateSliderInterval);
 })
+
 $('.slider').mouseout(function(e) {
   console.log('start');
   if(startInterval) {
@@ -80,3 +80,23 @@ $('.slider').mousemove(function(e) {
     startInterval = false;
   }
 })
+
+$('.btn').mouseenter(function() {
+  console.log('stop');
+  clearInterval(updateSliderInterval);
+})
+
+$('.btn').mouseout(function(e) {
+  console.log('start');
+  if(startInterval) {
+    interval();
+  }
+  startInterval = true;
+})
+
+// $('.btn').mousemove(function(e) {
+//   console.log();
+//   if(e.target.classList.contains('btn')) {
+//     startInterval = false;
+//   }
+// })
